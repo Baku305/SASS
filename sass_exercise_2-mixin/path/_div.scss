@@ -1,0 +1,48 @@
+div{
+    @include flex(column, center, center);
+    width: 100%;
+    height: fit-content;
+    border: 1px solid $color-primary;
+    padding: 1%;
+
+    section{
+        width: 100%;
+        @include flex(row, center, center);
+
+        article {
+            width: 100%;
+
+            p{
+                text-align: center;
+                margin: 5%;
+            }
+    
+        }
+        article:nth-child(2n+1){
+            @include flex(column, center, center);
+            height:10rem;
+            @include card-article($color-secondary, $color-tertiary, )
+        }
+
+        article:nth-child(2n+2){
+            @include flex(column, center, center);
+            height:10rem;
+            @include card-article($color-primary, $color-tertiary, )
+        }
+
+        #footer{
+            @include flex(column, center, center);
+            height:10rem;
+            @include card-article($color-tertiary, $color-secondary, 24px);
+            margin-top:2%;
+        }
+    }
+
+    h1{
+        margin: 2%;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+        color: $color-tertiary;
+    }
+}
+
