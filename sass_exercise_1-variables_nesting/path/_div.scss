@@ -1,0 +1,42 @@
+div{
+    @include flex(column, center, center);
+    width: 100%;
+    height: fit-content;
+    border: 1px solid $color-primary;
+    padding: 1%;
+
+    section{
+        @include flex(row, center, space-around);
+
+
+
+        article{
+            height: 10rem;
+            border: 1px solid $color-tertiary;
+
+
+            p{
+                height: 100%;
+                padding: 5%;
+                overflow: hidden;
+                @include flex (column, center, center);
+            }
+        }
+
+        article:nth-child(2n+1) p{
+            color: $color-secondary;
+        }
+
+        article:nth-child(2n+2) p{
+            color: $color-primary;
+        }
+    }
+
+    h1{
+        margin: 5%;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+        color: $color-tertiary;
+    }
+
+}
