@@ -1,0 +1,12 @@
+@mixin flex ($flexd, $aligni, $justifyc){
+    display: flex;
+    flex-direction: $flexd;
+    align-items: $aligni;
+    justify-content: $justifyc;
+}
+
+@mixin card-article($color, $border-color, $font-size:pxtorem(16)){
+    color: $color;
+    border: pxtorem(1) solid $border-color;
+    font-size: $font-size;
+}
