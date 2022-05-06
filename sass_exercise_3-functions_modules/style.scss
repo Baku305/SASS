@@ -1,0 +1,23 @@
+//variabili
+@import "path/variables.scss";
+
+//mixin-extend-font-function
+
+@import "path/function";
+@import "path/mixin";
+@import "path/font";
+
+//partials
+
+@import "path/div";
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 1%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
